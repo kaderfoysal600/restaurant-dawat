@@ -1,0 +1,99 @@
+<div class="menu">
+    <div class="container">
+        <div class="menu-main">
+            <div class="menu-top">
+                <h2>Special Package</h2>
+              </div>
+      <div class="menu-swiper">
+        <swiper
+        [loop]="true"
+        [speed]='2000'
+        [spaceBetween]="20"
+        [pagination]="{
+          clickable: true
+        }"
+        [autoplay]="{
+          delay: 2000,
+          disableOnInteraction: false
+        }"  
+        [breakpoints]="{
+          '400': {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          '500': {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          '1000': {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        }"     
+        class="mySwiper"
+      >
+        <ng-template swiperSlide>
+          <div class="food-menu-img">
+              <img src="../../../assets/images/menuu_1.jpg" alt="">
+          </div>
+          <div class="food-menu-details-two">
+              <h3>Cupcake Recipes</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, facere.</p>
+          </div>
+      </ng-template>
+      <ng-template swiperSlide>
+          <div class="food-menu-img">
+              <img src="../../../assets/images/menuu_2.jpg" alt="">
+          </div>
+          <div class="food-menu-details-two">
+              <h3>Cupcake Recipes</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, facere.</p>
+          </div>
+      </ng-template>
+      <ng-template swiperSlide>
+          <div class="food-menu-img">
+              <img src="../../../assets/images/menuu_3.jpg" alt="">
+          </div>
+          <div class="food-menu-details-two">
+              <h3>Cupcake Recipes</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, facere.</p>
+          </div>
+      </ng-template>
+      <ng-template swiperSlide>
+          <div class="food-menu-img">
+              <img src="../../../assets/images/menuu_4.jpg" alt="">
+          </div>
+          <div class="food-menu-details-two">
+              <h3>Cupcake Recipes</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, facere.</p>
+          </div>
+      </ng-template>
+      <ng-template swiperSlide>
+          <div class="food-menu-img">
+              <img src="../../../assets/images/menuu_5.jpg" alt="">
+          </div>
+          <div class="food-menu-details-two">
+              <h3>Cupcake Recipes</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, facere.</p>
+          </div>
+      </ng-template>
+      <ng-template swiperSlide>
+          <div class="food-menu-img">
+              <img src="../../../assets/images/menuu_6.jpg" alt="">
+          </div>
+          <div class="food-menu-details-two">
+              <h3>Cupcake Recipes</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, facere.</p>
+          </div>
+      </ng-template>
+      </swiper>
+      </div>
+        </div>
+    </div>
+    <div class="reservation-area-bg" style="background: rgba(0, 0, 0, 0) url(../../../assets/images/promotions_area_bg_2.jpg) no-repeat scroll center center / cover;">
+        <div class="reservation-text">
+            <h2>Book A table Now !</h2>
+            <a class="reservation-button">Book Now</a>
+        </div>
+    </div>
+</div>

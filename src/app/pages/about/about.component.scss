@@ -1,0 +1,58 @@
+@import "../../../theme/_base.scss";
+@import "./../../../theme/variables";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&family=PT+Sans+Narrow:wght@400;700&display=swap");
+.about-area {
+  background: rgba(0, 0, 0, 0)
+    url(../../../assets/images/home_three_about_bg.png) no-repeat scroll center
+    bottom / contain;
+  position: relative;
+  padding: 250px 0px 100px;
+  margin-top: 24rem;
+}
+.area-title > h2 {
+  font-size: 80px;
+  color: #ca3d26;
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  letter-spacing: 2px;
+  line-height: 0.8;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1rem 0rem 2rem;
+}
+//about-content
+.about-content-container {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+}
+.about-content-container > p {
+  color: #4a4d4f;
+  font-size: 13px;
+  line-height: 22px;
+}
+.big-text {
+  float: left;
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: -4px;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+//sign
+.sign {
+  padding-top: 2rem;
+  text-align: center;
+}
+.sign > img {
+  width: 190px;
+  margin: 0 auto;
+}
+
+@media(max-width:1000px){
+  .about-content-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr)
+  }
+}

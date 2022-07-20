@@ -1,0 +1,135 @@
+@import "../../../theme/_base.scss";
+@import "./../../../theme/variables";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+// ::ng-deep .swiper-slide {
+//   width: 100% !important;
+// }
+.promotion-area-bg {
+  background: rgba(0, 0, 0, 0)
+    url("../../../assets/images/promotions_area_bg_1.jpg") no-repeat scroll
+    center center / cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  padding: 6rem 0rem;
+}
+.promotion-area-bg::after {
+  background: #000 url("../../../assets/images/pattarn.png");
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.offer-top {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.offer-top h2 {
+  color: #ca3d26;
+  display: inline-block;
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  letter-spacing: 2px;
+  line-height: 0.8;
+  margin: 0;
+  padding: 0 20px 45px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 2;
+}
+.offer-top > h2::after {
+  background: rgba(0, 0, 0, 0) url("../../../assets/images/red.png") no-repeat
+    scroll center center / contain;
+  bottom: 0;
+  content: "";
+  height: 30px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.banner > img {
+  height: auto;
+  max-height: 450px;
+  width: 70%;
+}
+
+.promotions-details {
+  background: #fff none repeat scroll 0 0;
+  color: #1a1a1a;
+  height: 300px;
+  margin-top: -150px;
+  max-height: 350px;
+  padding: 50px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 40%;
+  z-index: 9;
+}
+.package-price {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0) url("../../../assets/images/tag.png") no-repeat
+    scroll center center / cover;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  height: 100px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: -50px;
+  position: absolute;
+  top: -50px;
+  width: 100px;
+}
+.promotions-details h3 {
+  font-size: 30px;
+  margin: 0 0 15px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+}
+p {
+  margin: 0 0 10px;
+}
+a.read-more {
+  border: 1px solid;
+  color: #ca3d26;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  padding: 7px 23px;
+  text-transform: uppercase;
+}
+a.read-more:hover{
+  border: 1px solid;
+  background-color: #ca3d26;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+@media(max-width:768px){
+  .banner > img {
+    height: auto;
+    max-height: 450px;
+    width: 100%;
+}
+.promotions-details {
+  height: auto;
+  margin: 0;
+  padding: 25px;
+  position: inherit;
+  width: 100%;
+}
+}

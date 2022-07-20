@@ -1,0 +1,100 @@
+<div  [class]="fixed ? 'header-fixed' : 'header-area'">
+ 
+  <div class="header-main">
+    <div class="header-top-container">
+      <div class="container">
+        <div [class]="fixed ? 'header-top-none' : 'header-top'">
+          <div class="header-top-left" >
+            <div class="header-top-left-elm">
+              <fa-icon [icon]="faEnvelope"></fa-icon>
+              <p>Email: Info@Restaurant.Com</p>
+            </div>
+            <div class="header-top-left-elm">
+              <i class="fa-solid fa-phone"></i>
+              <p>Telephone: +1 800 234 5678</p>
+            </div>
+          </div>
+          <div class="header-top-right">
+           <div class="header-top-right-logo">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-dribbble"></i></a>
+            <a href=""><i class="fa-brands fa-behance"></i></a>
+            <a href=""><i class="fa-solid fa-rss"></i></a>
+           </div>       
+                <div class="book-table-popup">
+              <a href="">BOOK A TABLE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom-container">
+      <div class="container">
+        <div [ngClass]="status ? ' header-bottom clicked' : 'header-bottom'">
+          <div [ngClass]="(fixed && status)? ' logo-menu logo-menu-fixed' : 'logo-menu'">
+            <div [class]="fixed ? 'fixed' : 'logo'">
+              <img class="img-1" src="../../../assets/images/main_logo.png" alt="" />
+              <img class="img-2" src="../../../assets/images/main_logo_black.png" alt="" />
+            </div>
+            <div  (click)="clickEvent()" [ngClass]="[status ? 'menu-bar clicked' : 'menu-bar',fixed ? 'menu-bar fixed-2' : 'menu-bar']">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div [ngClass]="[fixed ? ' fixed' : 'header-bottom-right',status ?'clicked-1':'header-bottom-right']">
+            <ul>
+              <li class="active"><a href=""></a>Home</li>
+              <li><a href=""></a>ABOUT US</li>
+              <li><a href=""></a>OFFER</li>
+              <li><a href=""></a>MENU</li>
+              <li><a href=""></a>TEAM</li>
+              <li><a href=""></a>BLOG</li>
+              <li><a href=""></a>GALLERY</li>
+              <li><a href=""></a>CONTACT</li>
+            </ul>
+            <div [class]="fixed ? 'fixed' : 'search'">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="silde" [class]="sideNav ? 'side-nav-active' : 'side-nav-inactive'">
+  <div class="slide-title">
+    <h3>Menu</h3>
+  </div>
+  <div class="slide-menu">
+    <ul>
+      <li><a routerLink="/">Home </a></li>
+      <li>
+        <a href="http://www.shanta-aml.com/"
+          >About Us <i class="fa fa-angle-down"></i
+        ></a>
+      </li>
+      <li>
+        <a href="http://www.shanta-aml.com/"
+          >What We offer <i class="fa fa-angle-down"></i
+        ></a>
+      </li>
+      <li>
+        <a href="http://www.shanta-aml.com/"
+          >Mutual Fund <i class="fa fa-angle-down"></i
+        ></a>
+      </li>
+      <li><a href="http://www.shanta-aml.com/sip">SIP </a></li>
+      <li><a href="http://www.shanta-aml.com/newsroom">Newsroom </a></li>
+    </ul>
+  </div>
+  <div class="btn-menu">
+    <ul>
+      <li><button>Investor Login</button></li>
+      <li><button>FAQ</button></li>
+    </ul>
+  </div>
+  <div class="cross">
+    <span (click)="sideNavInactive()"><i class="fa fa-xmark"></i></span>
+  </div>
+</div>
+<div class="overlay" *ngIf="sideNav" (click)="sideNavInactive()"></div> -->

@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import "../../../../theme/_base.scss";
+@import "./../../../../theme/variables";
+.footer-area-bg {
+  margin: 3rem 0rem;
+  height: 100%;
+  width: 100%;
+  padding: 150px 0px 200px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-area-bg::after {
+  background: #000 url(../../../../assets/images/pattarn.png);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.footer-text {
+  color: #fff;
+  position: absolute;
+  z-index: 4;
+  text-align: center;
+  width: 90%;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #2b2c2d;
+}
+.footer-logo {
+  padding: 50px;
+  box-sizing: border-box;
+}
+.footer-address>.phone-number{
+  padding-bottom: 50px;
+}
+.footer-address p {
+  padding-bottom: 10px;
+}
+.footer-address a,
+.footer-menu a,
+.footer-copyright a {
+  color: #ca3d26;
+}
+
+.footer-social-bookmark ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer-social-bookmark ul li {
+  display: inline;
+}
+.footer-social-bookmark ul li a {
+  display: inline-block;
+  font-size: 25px;
+  width: 50px;
+  color: #c4c3c3;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// .footer-menu {
+//   padding: 30px 0;
+// }
+// .footer-menu{
+//   text-align: inherit;
+// }
+.footer-bottom {
+  padding-top: 200px;
+}
+.footer-menu ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.footer-menu {
+  position: absolute;
+  z-index: 4;
+  bottom: 5%;
+  left: 5%;
+}
+.footer-copyright {
+  letter-spacing: 1px;
+
+  text-align: right;
+  position: absolute;
+  z-index: 4;
+  bottom: 5%;
+  right: 5%;
+  color: #fff;
+}
+.footer-copyright a {
+  color: #ca3d26;
+  display: inline-block;
+}
+p {
+  margin: 0 0 10px;
+}
+@media (max-width: 900px) {
+  .footer-copyright {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    /* text-align: right; */
+    position: absolute;
+    z-index: 4;
+    bottom: 4%;
+    right: 0%;
+    // left: 30%;
+    color: #fff;
+  }
+  .footer-menu {
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+    bottom: 10%;
+    left: 0%;
+  }
+  .footer-menu ul {
+    justify-content: center;
+    font-size: 16px;
+  }
+}

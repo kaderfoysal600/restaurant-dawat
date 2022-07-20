@@ -1,0 +1,65 @@
+<div class="swiper-container">
+  <swiper
+    [loop]="true"
+    [speed]="2000"
+    [autoplay]="{
+      delay: 2000,
+      disableOnInteraction: false
+    }"
+    [effect]="'fade'"
+    [slidesPerView]="1"
+    [spaceBetween]="0"
+    (swiper)="onSwiper($event)"
+    (slideChange)="onSlideChange()"
+    [navigation]="true"
+    [pagination]="{ clickable: true }"
+    [scrollbar]="{ draggable: true }"
+    class="swiper-banner"
+  >
+    <ng-template swiperSlide>
+      <div
+        class="slider-elm"
+        style="
+          background: url(../../../assets/images/slide_1.jpg) 0px 0px / cover
+            no-repeat scroll;
+        "
+      >
+        <div class="slider-text">
+          <h2 class="fromtop">Welcome To</h2>
+          <h1 class="pop-outin">DAWAT CAFE & RESTAURANT</h1>
+          <h3 class="lineUp">RESERVATION NOW</h3>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div
+        class="slider-elm"
+        style="
+          background: url(../../../assets/images/slide_2.jpg) 0px 0px / cover
+            no-repeat scroll;
+        "
+      >
+        <div class="slider-text">
+          <h2 class="fromtop">Our Menus</h2>
+          <h1 class="pop-outin">SEE WHAT'S NEW TODAY</h1>
+          <h3 class="lineUp">TODAYS MENU</h3>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div
+        class="slider-elm"
+        style="
+          background: url(../../../assets/images/slide_3.jpg) 0px 0px / cover
+            no-repeat scroll;
+        "
+      >
+        <div class="slider-text">
+          <h2 class="fromtop">Get Ready</h2>
+          <h1 class="pop-outin">TO JOIN WITH US</h1>
+          <h3 class="lineUp">BOOK A TABLE</h3>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</div>

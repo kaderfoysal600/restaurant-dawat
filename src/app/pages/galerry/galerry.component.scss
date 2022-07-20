@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import "../../../theme/_base.scss";
+@import "./../../../theme/variables";
+
+.menu-top {
+    text-align: center;
+    padding: 5rem 0rem;
+  }
+.menu-top h2 {
+    color: #ca3d26;
+    display: inline-block;
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 0.8;
+    margin: 0;
+    padding: 0 20px 45px;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 2;
+  }
+  .menu-top > h2::after {
+    background: rgba(0, 0, 0, 0) url("../../../assets/images/red.png") no-repeat
+      scroll center center / contain;
+    bottom: 0;
+    content: "";
+    height: 30px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }

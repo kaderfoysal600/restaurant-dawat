@@ -1,0 +1,73 @@
+<div class="promotion-area">
+    <div class="promotion-area-bg">
+      <div class="container">
+        <div class="offer-top">
+          <h2>Latest News</h2>
+        </div>
+        <div class="blog-swiper">
+          <swiper
+          [slidesPerView]="1"
+          [loop]="true"
+          [speed]='2000'
+          [spaceBetween]="20"
+          [pagination]="{
+            clickable: true
+          }"
+          [autoplay]="{
+            delay: 2000,
+            disableOnInteraction: false
+          }"  
+          [breakpoints]="{
+            '400': {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            '900': {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            '1200': {
+              slidesPerView: 3,
+              spaceBetween: 30
+            }
+          }"          
+          class="mySwiper"
+        >
+          <ng-template swiperSlide>
+            <div class="food-menu-img">
+                <img src="../../../assets/images/blog-1.jpg" alt="">
+            </div>
+            <div class="food-menu-details-two">
+                <h3>Cupcake Recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat possimus natus! Omnis odio iure dolorum vero, harum error vitae.</p>
+                <p class="post-meta"><a href="#">24 February, 2017</a> - <a href="#">5 Comments</a></p>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="food-menu-img">
+                <img src="../../../assets/images/blog-2.jpg" alt="">
+            </div>
+            <div class="food-menu-details-two">
+                <h3>Cupcake Recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat possimus natus! Omnis odio iure dolorum vero, harum error vitae.</p>
+                <p class="post-meta"><a href="#">24 February, 2017</a> - <a href="#">5 Comments</a></p>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="food-menu-img">
+                <img src="../../../assets/images/blog-3.jpg" alt="">
+            </div>
+            <div class="food-menu-details-two">
+                <h3>Cupcake Recipes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repellat possimus natus! Omnis odio iure dolorum vero, harum error vitae.</p>
+                <p class="post-meta"><a href="#">24 February, 2017</a> - <a href="#">5 Comments</a></p>
+            </div>
+        </ng-template>
+        </swiper>
+        </div>
+    
+    
+      </div>
+    </div>
+  </div>
+  
